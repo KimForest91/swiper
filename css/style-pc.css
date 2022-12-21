@@ -14,7 +14,34 @@ br.only-m::after {content: ' ';}
 
 /* common */
 body {font-family: 'NotoSansKR', sans-serif; font-size: 15px; font-weight: 300; color: #333333; line-height: 1.4; letter-spacing: -0.02em; background-color: #ffffff;}
-#wrapper {min-width: 1000px; overflow: hidden;}
+#wrapper {min-width: 1000px; overflow: hidden; background-color: antiquewhite;}
 #skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 100000;}
 #skip-nav:focus {top: 0;}
 
+#header {position: fixed; height: 60px; width: 100%; background-color: gray; z-index: 100000;}
+div.container {max-width: 1200px; height: 100%; margin: 0 auto; background-color: yellow; overflow: hidden;}
+#header h1 {float: left; margin-right: 90px; line-height: 60px;}
+
+
+
+
+div.image-slide {position: relative; width: 1000px; margin: 60px auto; background-color: lightblue;}
+div.image-slide:nth-of-type(2) {position: relative; width: 400px; margin: 60px auto; background-color: lightblue;}
+div.image-slide > div.box {position: relative; width: 100%;}
+
+
+
+/* swiper - pc */
+
+button {padding: 0;}
+a > span {text-indent: -9999px;}
+
+
+
+
+
+.slide1 .swiper-pagination-bullet { width: 12px; height: 12px; background: transparent; border: 1px solid pink; opacity: 1; }
+.slide1 .swiper-pagination-bullet-active { width: 40px; transition: width .5s; border-radius: 5px; background: pink; border: 1px solid transparent;}
+
+.slide2 #progressbar.swiper-pagination {position: absolute; top: initial; bottom: 0;}
+.slide2 img {}
